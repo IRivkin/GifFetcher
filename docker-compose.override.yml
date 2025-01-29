@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  distributedcache:
+    container_name: distributedcache
+    restart: always
+    ports:
+      - "6379:6379"
+  giffetcher.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+      - ASPNETCORE_HTTPS_PORTS=8081
+    depends_on:
+      - distributedcache
+    ports:
+      - "6000:8080"
+      - "6060:8081"

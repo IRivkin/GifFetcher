@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{B5BFF034-CA54-427C-B7CE-9C0BB65C5A0D}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{6DCBEC70-4866-4297-9AD0-73928CCFA987}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GifFetcherService", "GifFetcherService", "{41675562-BAF7-4321-B05C-5831AD0671C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GifFetcher.API", "GifFetcher.API", "{39C78433-7FC8-4FF4-BD27-0266C09399F0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GifFetcher.API", "Services\GifFetcher\GifFetcher.API\GifFetcher.API.csproj", "{1BEDF026-48CD-4EBA-8C5F-AE71F91C03BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DCBEC70-4866-4297-9AD0-73928CCFA987}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DCBEC70-4866-4297-9AD0-73928CCFA987}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DCBEC70-4866-4297-9AD0-73928CCFA987}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DCBEC70-4866-4297-9AD0-73928CCFA987}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BEDF026-48CD-4EBA-8C5F-AE71F91C03BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BEDF026-48CD-4EBA-8C5F-AE71F91C03BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BEDF026-48CD-4EBA-8C5F-AE71F91C03BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BEDF026-48CD-4EBA-8C5F-AE71F91C03BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{41675562-BAF7-4321-B05C-5831AD0671C7} = {B5BFF034-CA54-427C-B7CE-9C0BB65C5A0D}
+		{39C78433-7FC8-4FF4-BD27-0266C09399F0} = {41675562-BAF7-4321-B05C-5831AD0671C7}
+		{1BEDF026-48CD-4EBA-8C5F-AE71F91C03BC} = {39C78433-7FC8-4FF4-BD27-0266C09399F0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4C1ECE9-A4AD-4FED-B0FC-7EA1636ACABF}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  distributedcache:
+    image: redis
+
+  giffetcher.api:
+    image: ${DOCKER_REGISTRY-}giffetchergapi
+    container_name: giffetcher
+    build:
+      context: .
+      dockerfile: Services/GifFetcher/GifFetcher.API/Dockerfile
+
